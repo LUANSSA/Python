@@ -36,5 +36,14 @@ print("Texto usando ##.center(13, '#')## para centralizar e juntar caracteres", 
 
 print("Texto usando ##'.'.join(texto)## para adicionar caractere entre os caracteres", ".".join(texto)) # " . . . .P.y.t.h.o.n. "
 
+# Old style %
+
+nome = "Luan"
+idade = 28
+cidade = "Salvador"
+estado = "Bahia"
+
+print("Olá %s! Você tem %i anos e mora em %s/%s" % (nome, idade, cidade, estado)) # Olá Luan! Você tem 28 anos e mora em Salvador/Bahia
+
 
 
