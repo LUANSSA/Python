@@ -64,4 +64,36 @@ print(f"Valor de PI: {PI:.2f}") # Valor de PI: 3.14
 print(f"Valor de PI: {PI:10.2f}") # Valor de PI:       3.14
 
 
+# Fatiamento de String
+nome = "Luan Lima de Souza"
+# Tamanho da String
+print(f"O nome '{nome}' tem {len(nome)} caracteres.") # O nome 'Luan Lima de Souza' tem 18 caracteres.
+
+print(nome[0]) # L
+print(nome[-1])# a
+print(nome[-2])# z
+print(nome[:11]) # Luan Lima d
+print(nome[11:]) # e Souza
+print(nome[5:9]) # Lima
+print(nome[0:18:2]) # La iad oz
+print(nome[:]) # Luan Lima de Souza
+print(nome[0:18]) # Luan Lima de Souza
+
+# Espelhamento da string
+print(nome[::-1]) # azuoS ed amiL nauL
+
+# String múltiplas linhas
+print(f"""
+========== MENU ==========
+      
+    1 - Cadastrar
+    2 - Listar
+    3 - Perfil
+    4 - Configurações
+    5 - Sair      
+
+==========      ==========
+""")
+
+
 
