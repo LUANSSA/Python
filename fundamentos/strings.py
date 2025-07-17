@@ -36,14 +36,32 @@ print("Texto usando ##.center(13, '#')## para centralizar e juntar caracteres", 
 
 print("Texto usando ##'.'.join(texto)## para adicionar caractere entre os caracteres", ".".join(texto)) # " . . . .P.y.t.h.o.n. "
 
-# Old style %
 
+# Interpolação de variáveis em strings
 nome = "Luan"
 idade = 28
 cidade = "Salvador"
 estado = "Bahia"
+# Old style %
+print("Olá, %s! Você tem %i anos e mora em %s/%s." % (nome, idade, cidade, estado)) # Olá, Luan! Você tem 28 anos e mora em Salvador/Bahia.
 
-print("Olá %s! Você tem %i anos e mora em %s/%s" % (nome, idade, cidade, estado)) # Olá Luan! Você tem 28 anos e mora em Salvador/Bahia
+
+# Saída dos exemplos a seguir: Olá, Luan! Você tem 28 anos e mora em Salvador/Bahia. Luan em Salvador temos vários cursos disponíveis para você.
+
+# Método .format
+print("Olá, {}! Você tem {} anos e mora em {}/{}. {} em {} temos vários cursos disponíveis para você.".format(nome, idade, cidade, estado, nome, cidade))
+# Método .format com índice
+print("Olá, {0}! Você tem {1} anos e mora em {2}/{3}. {0} em {2} temos vários cursos disponíveis para você.".format(nome, idade, cidade, estado))
+# Método .format com nome de variável
+print("Olá, {nome}! Você tem {idade} anos e mora em {cidade}/{estado}. {nome} em {cidade} temos vários cursos disponíveis para você.".format( nome = nome, idade = idade, cidade = cidade, estado = estado))
+# Método f-string
+print(f"Olá, {nome}! Você tem {idade} anos e mora em {cidade}/{estado}. {nome} em {cidade} temos vários cursos disponíveis para você.")
+
+# Método f-string formantado a string
+PI = 3.14159
+print(f"Valor de PI: {PI}") # Valor de PI: 3.14159
+print(f"Valor de PI: {PI:.2f}") # Valor de PI: 3.14
+print(f"Valor de PI: {PI:10.2f}") # Valor de PI:       3.14
 
 
 
