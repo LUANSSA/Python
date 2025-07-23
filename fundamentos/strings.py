@@ -46,6 +46,7 @@ estado = "Bahia"
 print("Olá, %s! Você tem %i anos e mora em %s/%s." % (nome, idade, cidade, estado)) # Olá, Luan! Você tem 28 anos e mora em Salvador/Bahia.
 
 
+print("********* ---------- **********")
 # Saída dos exemplos a seguir: Olá, Luan! Você tem 28 anos e mora em Salvador/Bahia. Luan em Salvador temos vários cursos disponíveis para você.
 
 # Método .format
@@ -57,13 +58,14 @@ print("Olá, {nome}! Você tem {idade} anos e mora em {cidade}/{estado}. {nome} 
 # Método f-string
 print(f"Olá, {nome}! Você tem {idade} anos e mora em {cidade}/{estado}. {nome} em {cidade} temos vários cursos disponíveis para você.")
 
+print("********* ---------- **********")
 # Método f-string formantado a string
 PI = 3.14159
 print(f"Valor de PI: {PI}") # Valor de PI: 3.14159
 print(f"Valor de PI: {PI:.2f}") # Valor de PI: 3.14
 print(f"Valor de PI: {PI:10.2f}") # Valor de PI:       3.14
 
-
+print("********* ---------- **********")
 # Fatiamento de String
 nome = "Luan Lima de Souza"
 # Tamanho da String
