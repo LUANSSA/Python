@@ -88,3 +88,26 @@ print(lista.count("a"))
 print(lista)
 lista.reverse()
 print(lista)
+
+
+# Ordenamento
+linguaguens = ["python", "js", "c", "java", "c#"]
+# Ordena lista
+linguaguens.sort()
+print(linguaguens)
+# Ordena lista de forma reversa
+linguaguens.sort(reverse=True)
+print(linguaguens)
+
+# Ordenação com função anônima: Neste caso da menor string para maior string
+linguaguens.sort(key=lambda x: len(x))
+print(linguaguens)
+# Ordenação com função anônima: Neste caso com 'reverse' a ordenação é do maior para o menor
+linguaguens.sort(key=lambda x: len(x), reverse=True)
+print(linguaguens)
+
+
+# Função de Ordenação Built in (Padrão do interpretador Python)
+print(sorted(linguaguens))
+print(sorted(linguaguens, key=lambda x: len(x)))
+print(sorted(linguaguens, key=lambda x: len(x), reverse=True))
