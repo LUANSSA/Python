@@ -143,3 +143,14 @@ print(f"{listaAmigos[-1]}")
 print(f"{listaAmigos[-1][0]}")
 print(f"{listaAmigos[-1][2]}")
 print(f"{listaAmigos[-1][-1]}")
+
+print("\nCopia a lista do index 1")
+amigo = listaAmigos[1].copy()
+print(amigo)
+
+print("\nEtiqueta os itens da lista")
+nome, cidade, estado, idade = amigo
+print(nome)
+print(cidade)
+print(estado)
+print(idade)
