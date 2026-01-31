@@ -4,6 +4,22 @@ dicionario = {
     "cidade": "Salvador",
     "estado": "Bahia"
 }
+print(
+"""
+| Método     | O que faz                    |
+| ---------- | ---------------------------- |
+| `keys()`   | retorna as chaves            |
+| `values()` | retorna os valores           |
+| `items()`  | retorna pares (chave, valor) |
+| `update()` | junta ou atualiza            |
+| `clear()`  | apaga tudo                   |
+"""
+)
+
+print(f"Chaves: {dicionario.keys()}")
+print(f"Valores: {dicionario.values()}")
+print(f"Chaves e valores: {dicionario.items()}")
+
 
 print(f"Tipo: {type(dicionario)}")
 
@@ -34,5 +50,15 @@ print(dicionario["estado"])
 print(dicionario["email"])
 print(dicionario["telefone"])
 
-print("\nExibindo todos os valores com .values()")
-print(dicionario)
+
+dicionario[("a", "b", "c")] = True, False, True
+dicionario[("d", "e", "f")] = [False, False, False]
+
+print("\n********** Chaves do dicionário **********")
+for chave in dicionario:
+    print(chave)
+
+print("\n********** Chaves e valores do dicionário **********")
+for chave, valor in dicionario.items():
+    print(f"{chave}: {valor}")
+
